@@ -1,5 +1,5 @@
 [Interface]
-PrivateKey = کلید_خصوصی_سرور (محتویات فایل privatekey)
+PrivateKey = sudo nano /etc/wireguard/wg0.conf
 Address = 10.0.0.1/24
 ListenPort = 51820
 PostUp = iptables -A FORWARD -i %i -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
